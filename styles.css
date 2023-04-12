@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  height: 60px;
+  background-color: rgb(61, 33, 62);
+  color: antiquewhite;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 20px;
+}
+
+
+.gameCointainer{
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 20px;
+    padding: 20px;
+    
+    border-radius: 5%;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family:  "Roboto", sans-serif ;
+  
+
+}
+.box:hover{
+    background-color: rgb(247, 243, 250);
+    cursor: pointer;
+}
+.box{
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    font-size: 9vw;
+    align-items: center;
+}
+
+.gameinfo{
+    padding: 100px;
+    font-family:  "Roboto", sans-serif ;
+    
+}
+
+#reset{
+    width: 5vw;
+    height: 2vw;
+}
+
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
