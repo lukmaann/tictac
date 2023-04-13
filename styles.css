@@ -85,6 +85,7 @@ nav ul {
 
 
 @media only screen and (max-width: 800px) {
+    
 
     .gameCointainer{
         flex-wrap: wrap;
@@ -100,6 +101,9 @@ nav ul {
     }
     h1{
         width: 360px;
+    }
+    .gameinfo{
+        padding: 0;
     }
    
 
