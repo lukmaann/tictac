@@ -38,23 +38,28 @@ const checkwins = () => {
 
 let boxes = document.getElementsByClassName("box");
 
-Array.from(boxes).forEach((element) => {
-  element.addEventListener("click", () => {
-    let boxttext = element.querySelector(".boxtext");
-    let turninfo = document.getElementsByClassName("info")[0];
-    if (boxttext.innerText === "") {
-      boxttext.innerText = turn;
-      if (!isgameover) {
-        turn = changeTurn();
-        turninfo.innerText = "Turn for " + turn;
-      }
 
-      checkwins();
-    }
 
-    click.play();
-  });
-});
+
+    Array.from(boxes).forEach((element) => {
+        element.addEventListener("click", () => {
+          let boxttext = element.querySelector(".boxtext");
+          let turninfo = document.getElementsByClassName("info")[0];
+          if (boxttext.innerText === "") {
+            boxttext.innerText = turn;
+            
+              turn = changeTurn();
+              turninfo.innerText = "Turn for " + turn;
+      
+            checkwins();
+          }
+      
+          click.play();
+        });
+      });
+
+    
+
 
 document.getElementById("reset").addEventListener('click',()=>{
 
