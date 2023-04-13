@@ -38,6 +38,9 @@ nav ul {
   
 
 }
+.testing{
+    margin: 100px;
+}
 .box:hover{
     background-color: rgb(247, 243, 250);
     cursor: pointer;
@@ -59,6 +62,12 @@ nav ul {
 #reset{
     width: 5vw;
     height: 2vw;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: bolder;
+    background-color: rgb(255 214 131);
 }
 
 .bt-0{
@@ -73,3 +82,25 @@ nav ul {
 .bl-0{
     border-left: 0;
 }
+
+
+@media only screen and (max-width: 800px) {
+
+    .gameCointainer{
+        flex-wrap: wrap;
+    }
+    #reset{
+        width: 20vw;
+        height: 8vh;
+
+    }
+    .container{
+        grid-template-columns: repeat(3,30vw);
+    grid-template-rows: repeat(3,30vw);
+    }
+    h1{
+        width: 360px;
+    }
+   
+
+  }
