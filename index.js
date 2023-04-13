@@ -30,6 +30,7 @@ const checkwins = () => {
       isgameover = true;
       document.getElementsByClassName("info")[0].innerText =
         boxtext[e[0]].innerText + " won";
+        turn=boxtext[e[0]].innerText;
         gameover.play();
     
     }
